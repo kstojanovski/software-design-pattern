@@ -12,7 +12,8 @@ Also parameter for an if-condition can be passed for runtime object type decisio
 
 ## Singleton
 
-Only the one and alowed object is created from the class.
+Only the one and alowed object is created from the class.<br>
+The thresd safe implemnetation of this pattern needs to be used.
 
 ## Builder
 This pattern should be used when the object has many properties, also when not all properties need to be initialized at object creation.<br><br>
