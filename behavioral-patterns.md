@@ -101,10 +101,10 @@ The algorithm to be used for a particular purpose may then be selected at run-ti
 IStartegy(::calculation) -> Algorithm1<br>
 IStartegy(::calculation) -> Algorithm2<br>
 IStartegy(::calculation) -> Algorithm2<br><br>
-1. Create Client<br>
-2. Use Algorithm class by purpose.<br><br>
+1. Create Client.
+2. Use Algorithm class by purpose.
 
-My: The choosing algorithm can be encapsulated into the object creation method as part of the factory pattern.
+**My style**: The choosing algorithm can be encapsulated into the object creation method as part of the factory pattern.
 
 ### Template Method
 
@@ -145,10 +145,10 @@ IState (has method defined which behave differently in the implemnetations)<br>
 IState -> StateA<br>
 IState -> StateB<br>
 IState -> StateC<br><br>
-1. Create ContextClass with init State.<br>
-2. Invoke State1::doMetho(Context) changes state.<br>
-3. Invoke State2::doMetho(Context) changes state.<br>
-4. Invoke State3::doMetho(Context) changes state.<br><br>
+1. Create ContextClass with init State.
+2. Invoke State1::doMetho(Context) changes state.
+3. Invoke State2::doMetho(Context) changes state.
+4. Invoke State3::doMetho(Context) changes state.
 
 On any different state invoking the same method from the context would have different output.<br>
 
