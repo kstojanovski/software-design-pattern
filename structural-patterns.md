@@ -13,10 +13,12 @@ The question is does this technical construct is always an adapter design patter
 
 ## Bridge
 
-It is a class combination (Shape and Color).<br>
-| |A |B |<br>
-|0|A0|B0|<br>
-|1|A1|B1|<br><br>
+It is a class combination i.e. Shape and Color. In the table Letters and Numbers are defined as different class abstraction<br>
+|        | A     | B     |
+| :------------- | :----------: | -----------: |
+|  0 | A0   | B0    |
+| 1   | A1 | B1 |
+
 Contains first interface (main) and implementations. (Abstraction)<br>
 Second interface and implementations which also contains the first one as reference. (Implementation)<br>
 This way the both implementations as sub classes can be developed independently.<br><br>
