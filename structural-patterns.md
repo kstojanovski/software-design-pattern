@@ -5,10 +5,10 @@
 ### Bridge
 
 It is a class combination i.e. shape and color. In the following table letters and numbers are defined as different class abstraction.<br>
-|        | A     | B     |
-| :------------- | :----------: | -----------: |
-|  0 | A0   | B0    |
-| 1   | A1 | B1 |
+|    |  A  | B  |
+| :- | :-: | -: |
+| 0  | A0  | B0 |
+| 1  | A1  | B1 |
 
 Contains first interface (main) and implementations. (Abstraction)<br>
 Second interface and implementations which also contains the first one as reference. (Implementation)<br>
