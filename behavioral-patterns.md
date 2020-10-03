@@ -7,7 +7,6 @@
 As the name suggests, the chain of responsibility pattern creates a chain of receiver objects for a request. This pattern decouples sender and receiver of a request based on type of request.<br>
 The design pattern promotes loose coupling by allowing a series of handlers to be created in a linked list or chain.<br><br>
 The If-ElseIf-Else idiom is shown with this behaviour.
-
 #### Structure
 * AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassA
 * AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassB
@@ -24,7 +23,7 @@ Is it up to the programmer/problem what it should be implemented in the conditio
 
 Command pattern is a data driven design pattern that enables all of the information for a request to be contained within a single object.<br>
 The command can then be invoked as required, often as part of a batch of queued commands with rollback capabilities.<br><br>
-The order is an interface which is implemented for any order. They orders are based on the methods of the base class.<br><br>
+The order is an interface which is implemented for any order. They orders are based on the methods of the base class.
 #### Structure
 * BaseClass(do1, do2) - Receiver
 * InterfaceOrder::execute -> DoOrder1(has BaseClase)::execute - wrapp BaseClass::do1
@@ -43,7 +42,7 @@ Centralazie functionality like "save text", can be used from button or other ele
 The mediator pattern is a design pattern that promotes loose coupling of objects by removing the need for classes to communicate with each other directly.<br>
 Instead, mediator objects are used to encapsulate and centralise the interactions between classes.<br><br>
 Any Colleague need to have the mediatorObj.<br>
-On other side the mediatorObj (ConcreteMediator) has to contain the references of the Colleagues.<br><br>
+On other side the mediatorObj (ConcreteMediator) has to contain the references of the Colleagues.
 #### Structure
 * IMediator::method0()-> ConcreteMediator::method0() // setter/getter on all Concrete Colleague classes
 * ColleagueBase(has a Mediator m) -> ColleagueA (can call m.method0())
@@ -60,7 +59,7 @@ Should the Mediator need to be singleton?<br>
 
 ### Observer
 
-The observer pattern is a design pattern that defines a link between objects so that when one object's state changes, all dependent objects are updated automatically.<br><br>
+The observer pattern is a design pattern that defines a link between objects so that when one object's state changes, all dependent objects are updated automatically.
 #### Structure
 * Subject(has list of IObserver, method "notifyAll" - intrates trough the IObserver::update)<br>
 * IObserver(has Subject, method "update")
@@ -102,7 +101,7 @@ The logic is placed in the visitor and operates on the element which invoked the
 
 Interpreter pattern provides a way to evaluate language grammar or expression. This type of pattern<br>
 This pattern involves implementing an expression interface which tells to interpret a particular context.<br>
-This pattern is used in SQL parsing, symbol processing engine etc.<br><br>
+This pattern is used in SQL parsing, symbol processing engine etc.
 #### Structure
 * Interface::interpret(context) -> TerminalExoression::interpret(context)
 * Interface::interpret(context) -> NonTerminalExoression1::interpret(context)
@@ -111,7 +110,7 @@ This pattern is used in SQL parsing, symbol processing engine etc.<br><br>
 ### Strategy
 
 he strategy pattern is a design pattern that allows a set of similar algorithms to be defined and encapsulated in their own classes.<br>
-The algorithm to be used for a particular purpose may then be selected at run-time according to your requirements.<br><br>
+The algorithm to be used for a particular purpose may then be selected at run-time according to your requirements.
 #### Structure
 * IStartegy(::calculation) -> Algorithm1
 * IStartegy(::calculation) -> Algorithm2
@@ -125,7 +124,7 @@ The algorithm to be used for a particular purpose may then be selected at run-ti
 ### Template Method
 
 The template method pattern is a design pattern that allows a group of interchangeable, similarly structured, multi-step algorithms to be defined.<br>
-Each algorithm follows the same series of actions but provides a different implementation of the steps.<br><br>
+Each algorithm follows the same series of actions but provides a different implementation of the steps.
 #### Structure
 * AbstractClass(::severalMethods)<br>
 * AbstractClass -> Algorithm1<br>
@@ -151,7 +150,7 @@ Memento pattern is used to restore state of an object to a previous state.
 ### Null Object
 
 Design where "nothing will come of nothing".<br>
-The Null object pattern is a design pattern that simplifies the use of dependencies that can be undefined. This is achieved by using instances of a concrete class that implements a known interface, instead of null references.<br><br>
+The Null object pattern is a design pattern that simplifies the use of dependencies that can be undefined. This is achieved by using instances of a concrete class that implements a known interface, instead of null references.
 #### Structure
 * AbstractClass -> ConcreteClass
 * AbstractClass -> NullClass
@@ -160,7 +159,7 @@ The Null object pattern is a design pattern that simplifies the use of dependenc
 ### State
 
 The state pattern is a design pattern that allows an object to completely change its behaviour depending upon its current internal state. <br>
-By substituting classes within a defined context, the state object appears to change its type at run-time.<br><br>
+By substituting classes within a defined context, the state object appears to change its type at run-time.
 #### Structure
 * ContextClass(has State)<br>
 * IState (has method defined which behave differently in the implemnetations)<br>
