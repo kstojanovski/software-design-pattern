@@ -25,10 +25,12 @@ Is it up to the programmer/problem what it should be implemented in the conditio
 Command pattern is a data driven design pattern that enables all of the information for a request to be contained within a single object.<br>
 The command can then be invoked as required, often as part of a batch of queued commands with rollback capabilities.<br><br>
 The order is an interface which is implemented for any order. They orders are based on the methods of the base class.<br><br>
-BaseClass(do1, do2) - Receiver<br>
-InterfaceOrder::execute -> DoOrder1(has BaseClase)::execute - wrapp BaseClass::do1<br>
-InterfaceOrder::execute -> DoOrder2(has BaseClase)::execute - wrapp BaseClass::do2<br>
-Invoker - Three different approaches:<br>
+#### Structure
+* BaseClass(do1, do2) - Receiver
+* InterfaceOrder::execute -> DoOrder1(has BaseClase)::execute - wrapp BaseClass::do1
+* InterfaceOrder::execute -> DoOrder2(has BaseClase)::execute - wrapp BaseClass::do2
+* Invoker
+#### Behaviour
 1. (ListOfOrders) Add the order to the list. Execute later together with other commands.
 2. (ListOfOrders) Add the order to the list and execute it.
 3. The invoker wraps the commands.
@@ -42,10 +44,12 @@ The mediator pattern is a design pattern that promotes loose coupling of objects
 Instead, mediator objects are used to encapsulate and centralise the interactions between classes.<br><br>
 Any Colleague need to have the mediatorObj.<br>
 On other side the mediatorObj (ConcreteMediator) has to contain the references of the Colleagues.<br><br>
-IMediator::method0()-> ConcreteMediator::method0() // setter/getter on all Concrete Colleague classes<br>
-ColleagueBase(has a Mediator m) -> ColleagueA (can call m.method0())<br>
-ColleagueBase(has a Mediator m) -> ColleagueB (can call m.method0())<br>
-ConcreteMediator::method0()<br><br>
+#### Structure
+* IMediator::method0()-> ConcreteMediator::method0() // setter/getter on all Concrete Colleague classes
+* ColleagueBase(has a Mediator m) -> ColleagueA (can call m.method0())
+* ColleagueBase(has a Mediator m) -> ColleagueB (can call m.method0())
+* ConcreteMediator::method0()
+#### Behaviour
 1. Mediator m is created
 2. ColleagueA(m) cA is created, m.setCA(cA)
 3. ColleagueB(m) cB is created, m.setCA(cB)
@@ -57,31 +61,36 @@ Should the Mediator need to be singleton?<br>
 ### Observer
 
 The observer pattern is a design pattern that defines a link between objects so that when one object's state changes, all dependent objects are updated automatically.<br><br>
-Subject(has list of IObserver, method "notifyAll" - intrates trough the IObserver::update)<br>
-IObserver(has Subject, method "update")<br>
-IObserver -> ObserverA<br>
-IObserver -> ObserverB<br>
-IObserver -> ObserverC<br><br>
-1. New Subject<br>
-2. Create the Observer with the subject object as parameter and add this observer into the list of subjects.<br>
-3. Setting the state in Subject invoked notifyAll.<br><br>
-* This pattern from the interface/class relation point of view looks very similar to the mediator pattern.<br>
-* To use this pattern in Java you can the implementation from util package:<br>
-   * interface java.util.Observer <br>
-   * public class java.util.Observable
+#### Structure
+* Subject(has list of IObserver, method "notifyAll" - intrates trough the IObserver::update)<br>
+* IObserver(has Subject, method "update")
+* IObserver -> ObserverA<br>
+* IObserver -> ObserverB<br>
+* IObserver -> ObserverC<br><br>
+#### Behaviour
+1. New Subject
+2. Create the Observer with the subject object as parameter and add this observer into the list of subjects.
+3. Setting the state in Subject invoked notifyAll.
+
+This pattern from the interface/class relation point of view looks very similar to the mediator pattern.<br>
+To use this pattern in Java you can the implementation from util package:<br>
+* interface java.util.Observer <br>
+* public class java.util.Observable
 
 **Technical similarities**: It looks very similar to mediator pattern.
 
 ### Visitor
 
 The visitor pattern is a design pattern that separates a set of structured data from the functionality that may be performed upon it.<br>
-This promotes loose coupling and enables additional operations to be added without modifying the data classes.<br><br>
-InterfaceElement(::accept(Visitor)) -> ConcreteElementA - lightWeight classes withou much functionallity<br>
-InterfaceElement(::accept(Visitor)) -> ConcreteElementB<br>
-InterfaceElement(::accept(Visitor)) -> ConcreteElementC<br>
-InterfaceVisitor(visitMethod for any concrete Visitor) -> Visitor1 - where the functionallity is implemented<br>
-InterfaceVisitor(visitMethod for any concrete Visitor) -> Visitor2<br><br>
-1. Initialize Elements as List.<br>
+This promotes loose coupling and enables additional operations to be added without modifying the data classes.
+#### Structure
+* InterfaceElement(::accept(Visitor)) -> ConcreteElementA - lightWeight classes withou much functionallity
+* InterfaceElement(::accept(Visitor)) -> ConcreteElementB
+* InterfaceElement(::accept(Visitor)) -> ConcreteElementC
+* InterfaceVisitor(visitMethod for any concrete Visitor) -> Visitor1 - where the functionallity is implemented
+* InterfaceVisitor(visitMethod for any concrete Visitor) -> Visitor2
+#### Behaviour
+1. Initialize Elements as List.
 2. Define Visitors<br>
 3. Iterate trough the elements and invoke the accept with the Visitors.<br><br>
 
@@ -94,17 +103,20 @@ The logic is placed in the visitor and operates on the element which invoked the
 Interpreter pattern provides a way to evaluate language grammar or expression. This type of pattern<br>
 This pattern involves implementing an expression interface which tells to interpret a particular context.<br>
 This pattern is used in SQL parsing, symbol processing engine etc.<br><br>
-Interface::interpret(context) -> TerminalExoression::interpret(context)<br>
-Interface::interpret(context) -> NonTerminalExoression1::interpret(context)<br>
-Interface::interpret(context) -> NonTerminalExoression2::interpret(context)<br>
+#### Structure
+* Interface::interpret(context) -> TerminalExoression::interpret(context)
+* Interface::interpret(context) -> NonTerminalExoression1::interpret(context)
+* Interface::interpret(context) -> NonTerminalExoression2::interpret(context)
 
 ### Strategy
 
 he strategy pattern is a design pattern that allows a set of similar algorithms to be defined and encapsulated in their own classes.<br>
 The algorithm to be used for a particular purpose may then be selected at run-time according to your requirements.<br><br>
-IStartegy(::calculation) -> Algorithm1<br>
-IStartegy(::calculation) -> Algorithm2<br>
-IStartegy(::calculation) -> Algorithm2<br><br>
+#### Structure
+* IStartegy(::calculation) -> Algorithm1
+* IStartegy(::calculation) -> Algorithm2
+* IStartegy(::calculation) -> Algorithm2
+#### Behaviour
 1. Create Client.
 2. Use Algorithm class by purpose.
 
@@ -114,41 +126,48 @@ IStartegy(::calculation) -> Algorithm2<br><br>
 
 The template method pattern is a design pattern that allows a group of interchangeable, similarly structured, multi-step algorithms to be defined.<br>
 Each algorithm follows the same series of actions but provides a different implementation of the steps.<br><br>
-AbstractClass(::severalMethods)<br>
-AbstractClass -> Algorithm1<br>
-AbstractClass -> Algorithm2<br>
-AbstractClass -> Algorithm3<br><br>
+#### Structure
+* AbstractClass(::severalMethods)<br>
+* AbstractClass -> Algorithm1<br>
+* AbstractClass -> Algorithm2<br>
+* AbstractClass -> Algorithm3<br><br>
+#### Behaviour
 1. Use the propriate calculcations by choosing the related Algorith class.
 
 ## State Behaviour Patterns
 
 ### Memento
 
-Memento pattern is used to restore state of an object to a previous state.<br><br>
-Memento(set/get State) - State storage unit.<br>
-Originator(hasMemeto - saveStateToMemento/getStateFromMemento, get/set State)<br>
-CarteTaker(has lists of Memento, add, get)<br><br>
-1. State structure needs to be same in both classes.<br>
-2 Originator on saveStateToMemento creates new Memmento with its current state and returns it.<br>
-2 Originator on getStateFromMemento sets the state from Memento as argument to Orginator.<br>
+Memento pattern is used to restore state of an object to a previous state.
+#### Structure
+* Memento(set/get State) - State storage unit.
+* Originator(hasMemeto - saveStateToMemento/getStateFromMemento, get/set State)
+* CarteTaker(has lists of Memento, add, get)
+#### Behaviour
+1. State structure needs to be same in both classes.
+2 Originator on saveStateToMemento creates new Memmento with its current state and returns it.
+2 Originator on getStateFromMemento sets the state from Memento as argument to Orginator.
 
 ### Null Object
 
 Design where "nothing will come of nothing".<br>
 The Null object pattern is a design pattern that simplifies the use of dependencies that can be undefined. This is achieved by using instances of a concrete class that implements a known interface, instead of null references.<br><br>
-AbstractClass -> ConcreteClass<br>
-AbstractClass -> NullClass<br>
-ClientClass(List<AbstractClass>)::get -> if nothing found then return NullClass.<br>
+#### Structure
+* AbstractClass -> ConcreteClass
+* AbstractClass -> NullClass
+* ClientClass(List<AbstractClass>)::get -> if nothing found then return NullClass.
 
 ### State
 
 The state pattern is a design pattern that allows an object to completely change its behaviour depending upon its current internal state. <br>
 By substituting classes within a defined context, the state object appears to change its type at run-time.<br><br>
-ContextClass(has State)<br>
-IState (has method defined which behave differently in the implemnetations)<br>
-IState -> StateA<br>
-IState -> StateB<br>
-IState -> StateC<br><br>
+#### Structure
+* ContextClass(has State)<br>
+* IState (has method defined which behave differently in the implemnetations)<br>
+* IState -> StateA<br>
+* IState -> StateB<br>
+* IState -> StateC<br><br>
+#### Behaviour
 1. Create ContextClass with init State.
 2. Invoke State1::doMetho(Context) changes state.
 3. Invoke State2::doMetho(Context) changes state.
@@ -163,6 +182,7 @@ On any different state invoking the same method from the context would have diff
 The iterator pattern is a design pattern that provides a means for the elements of an aggregate object to be accessed sequentially without knowledge of its structure.<br>
 This allows traversing of lists, trees and other structures in a standard manner.<br><br>
 Straightforward solution:
+#### Structure
 * Interface Interator<br>
    * public boolean hasNext();
    * public Object next();
@@ -171,6 +191,7 @@ Straightforward solution:
 * Container -> ClassWithCollection
    * getIterator returned InnerIterator()
    * private class InnerIterator implements hasNext()/next()
+#### Behaviour   
 * Client
    * initialize - ClassWithCollection objWithCollection
    * iterate - for(Iterator iter = objWithCollection.getIterator(); iter.hasNext();)
