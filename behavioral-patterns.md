@@ -41,12 +41,13 @@ IMediator::method0()-> ConcreteMediator::method0() // setter/getter on all Concr
 ColleagueBase(has a Mediator m) -> ColleagueA (can call m.method0())<br>
 ColleagueBase(has a Mediator m) -> ColleagueB (can call m.method0())<br>
 ConcreteMediator::method0()<br><br>
-1. Mediator m is created<br>
-2. ColleagueA(m) cA is created, m.setCA(cA)<br>
-3. ColleagueB(m) cB is created, m.setCA(cB)<br>
-4. The methods od the Colleagues can be invoked and the data should go trough the mediator.<br><br>
-Should the Mediator need to be singleton?<br><br>
-It looks very similar to observer pattern.<br>
+1. Mediator m is created
+2. ColleagueA(m) cA is created, m.setCA(cA)
+3. ColleagueB(m) cB is created, m.setCA(cB)
+4. The methods od the Colleagues can be invoked and the data should go trough the mediator.
+
+Should the Mediator need to be singleton?<br>
+**Technical similarities**: It looks very similar to observer pattern.
 
 ### Observer
 
@@ -59,10 +60,12 @@ IObserver -> ObserverC<br><br>
 1. New Subject<br>
 2. Create the Observer with the subject object as parameter and add this observer into the list of subjects.<br>
 3. Setting the state in Subject invoked notifyAll.<br><br>
-- This pattern from the interface/class relation point of view looks very similar to the mediator pattern.<br>
-- To use this pattern in Java you can the implementation from util package:<br>
-** interface java.util.Observer <br>
-** public class java.util.Observable<br>
+* This pattern from the interface/class relation point of view looks very similar to the mediator pattern.<br>
+* To use this pattern in Java you can the implementation from util package:<br>
+   * interface java.util.Observer <br>
+   * public class java.util.Observable
+
+**Technical similarities**: It looks very similar to mediator pattern.
 
 ### Visitor
 
@@ -76,6 +79,7 @@ InterfaceVisitor(visitMethod for any concrete Visitor) -> Visitor2<br><br>
 1. Initialize Elements as List.<br>
 2. Define Visitors<br>
 3. Iterate trough the elements and invoke the accept with the Visitors.<br><br>
+
 The logic is placed in the visitor and operates on the element which invoked the accept(Visitor)
 
 ## Algorithm Behaviour Patterns
@@ -98,6 +102,7 @@ IStartegy(::calculation) -> Algorithm2<br>
 IStartegy(::calculation) -> Algorithm2<br><br>
 1. Create Client<br>
 2. Use Algorithm class by purpose.<br><br>
+
 My: The choosing algorithm can be encapsulated into the object creation method as part of the factory pattern.
 
 ### Template Method
@@ -143,6 +148,7 @@ IState -> StateC<br><br>
 2. Invoke State1::doMetho(Context) changes state.<br>
 3. Invoke State2::doMetho(Context) changes state.<br>
 4. Invoke State3::doMetho(Context) changes state.<br><br>
+
 On any different state invoking the same method from the context would have different output.<br>
 
 ## Other Behaviour Patterns
