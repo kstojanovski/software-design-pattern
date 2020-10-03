@@ -6,14 +6,14 @@
 
 As the name suggests, the chain of responsibility pattern creates a chain of receiver objects for a request. This pattern decouples sender and receiver of a request based on type of request.<br>
 The design pattern promotes loose coupling by allowing a series of handlers to be created in a linked list or chain.<br><br>
-If-ElseIf-Else Idiom<br><br>
+The If-ElseIf-Else idiom is shown with this behaviour.<br><br>
 AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassA<br>
 AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassB<br>
 AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassC<br>
 objA.next(objB)<br>
 objB.next(objC)<br><br>
-If up to the programmer/problemwhat it should be implemented in the condition and und which circumstances the next is invoked.<br><br>
-Technical similarities: Decoration patterns has also chain call but it is a one unit as structure, here you can just exit the chain.
+Is it  up to the programmer/problem what it should be implemented in the condition and under which circumstances the next object in the chain is invoked.<br><br>
+**Technical similarities**: Decoration patterns has also chain call but it is a one unit as structure, here you can just exit the chain.
 
 ### Command
 
