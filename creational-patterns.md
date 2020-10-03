@@ -7,7 +7,7 @@ It returnes Factory (see next pattern description) which create Object.
 
 ## Factory
 
-Class with mehtod which returns new created object of some type. The retrun value can also be generalazed object, therefore as retrun value interface can be declared.<br>
+Class with mehtod which returns new created object of some type. The retrun value can also be generalazed object, therefore as retrun value interface can be declared.<br><br>
 Also parameter for an if-condition can be passed for runtime object type decision.
 
 ## Singleton
@@ -15,11 +15,11 @@ Also parameter for an if-condition can be passed for runtime object type decisio
 Only the one and alowed object is created from the class.
 
 ## Builder
-
-**Example**: `new ObjectBuider.addProperty1("some").addProperty2("some").build();`<br>
-Creational pattern where the properties can be add and concatinated on the builder object and as last method the creational "build" is invoked. New object with the wished type is returned.<br>
+This pattern should be used when the object has many properties, also when not all properties need to be initialized at object creation.<br><br>
+Creational pattern where the properties can be add and concatinated on the builder object and as last method the creational "build" is invoked. New object with the wished type is returned.<br><br>
+**Example**: `new ObjectBuider.addProperty1("some").addProperty2("some").build();`<br><br>
 Example for this kind of usage is the StringBuilder.<br>
-Usually makes sence when the object has many properties and not all need to be overwritten at object creation.
+
 
 ## Prototype
 
