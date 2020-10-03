@@ -1,6 +1,6 @@
 # Behavioural Patterns
 
-## Core/Real Behaviour patterns
+## Core/Real Behaviour Patterns
 
 ### Chain of Responsibility
 
@@ -77,7 +77,7 @@ InterfaceVisitor(visitMethod for any concrete Visitor) -> Visitor2<br><br>
 3. Iterate trough the elements and invoke the accept with the Visitors.<br><br>
 The logic is placed in the visitor and operates on the element which invoked the accept(Visitor)
 
-## Algorithm Behaviour patterns
+## Algorithm Behaviour Patterns
 
 ### Interpreter
 
@@ -109,24 +109,7 @@ AbstractClass -> Algorithm2<br>
 AbstractClass -> Algorithm3<br><br>
 1. Use the propriate calculcations by choosing the related Algorith class.
 
-## Other Behaviour patterns
-
-### Iterator
-
-The iterator pattern is a design pattern that provides a means for the elements of an aggregate object to be accessed sequentially without knowledge of its structure.<br>
-This allows traversing of lists, trees and other structures in a standard manner.<br><br>
-Straightforward solution:<br><br>
-Interface Interator<br>
-    public boolean hasNext();<br>
-    public Object next();<br>
-Interface Container<br>
-   public Iterator getIterator();<br>
-Container -> ClassWithCollection<br>
-	getIterator returned InnerIterator()<br>
-	private class InnerIterator implements hasNext()/next()<br>
-UseClass<br>
-	//ClassWithCollection objWithCollection<br>
-	for(Iterator iter = objWithCollection.getIterator(); iter.hasNext();)<br>
+## State Behaviour Patterns
 
 ### Memento
 
@@ -160,3 +143,22 @@ IState -> StateC<br><br>
 3. Invoke State2::doMetho(Context) changes state.<br>
 4. Invoke State3::doMetho(Context) changes state.<br><br>
 On any different state invoking the same method from the context would have different output.<br>
+
+## Other Behaviour Patterns
+
+### Iterator
+
+The iterator pattern is a design pattern that provides a means for the elements of an aggregate object to be accessed sequentially without knowledge of its structure.<br>
+This allows traversing of lists, trees and other structures in a standard manner.<br><br>
+Straightforward solution:<br><br>
+Interface Interator<br>
+    public boolean hasNext();<br>
+    public Object next();<br>
+Interface Container<br>
+   public Iterator getIterator();<br>
+Container -> ClassWithCollection<br>
+	getIterator returned InnerIterator()<br>
+	private class InnerIterator implements hasNext()/next()<br>
+UseClass<br>
+	//ClassWithCollection objWithCollection<br>
+	for(Iterator iter = objWithCollection.getIterator(); iter.hasNext();)<br>
