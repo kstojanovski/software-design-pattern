@@ -12,7 +12,7 @@ It is a class combination i.e. shape and color. In the following table letters a
 
 Contains first interface (main) and implementations. (Abstraction)<br>
 Second interface and implementations which also contains the first one as reference. (Implementation)<br>
-This way the both implementations as sub classes can be developed independently.<br><br>
+This way the both implementations as sub classes can be developed independently.
 #### Structure
 * Letter -> A<br>
 * Letter -> B<br>
@@ -41,7 +41,7 @@ The pattern Bridge is based on different interfaces.<br>
 
 ### Adapter
 
-It implemented method from the interface is (wrappes) using also the method of the reference or super class.<br><br>
+It implemented method from the interface is (wrappes) using also the method of the reference or super class.
 #### Structure
 There are several different implementation of this pattern.<br>
 1. It is realize with a class which implements interface and extends class. Its method of the interfaced in implemented wrapping the method of the class.<br>
@@ -54,14 +54,14 @@ The question is does this technical construct is always an adapter design patter
 ### Composite
 
 Composite pattern is used where we need to treat a group of objects in similar way as a single object.<br>
-Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.<br><br>
+Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
 #### Structure
 Compose (has list if Compose).
 
 ### Flightweight
 
 The flyweight pattern is a design pattern that is used to minimise resource usage when working with very large numbers of objects.<br><br>
-Cache is used for this pattern.<br>
+Cache is used for this pattern.
 #### Behaviour
 1. getObjectFromCache - if object doesn't exsit create new one otherwise return the object.
 2. Manipulate the necessary properties.
@@ -96,7 +96,7 @@ This pattern filters collections by implemented criteria.
 ### Facade
 
 Facade pattern hides the complexities of the system and provides an interface to the client using which the client can access the system.<br>
-It hides the classes of the subsistem trough its existence.<br><br>
+It hides the classes of the subsistem trough its existence.
 #### Structure
 * Subsystem (Package)
 * ClassA, ClassB, ClassC
