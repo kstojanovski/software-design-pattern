@@ -6,13 +6,13 @@
 
 As the name suggests, the chain of responsibility pattern creates a chain of receiver objects for a request. This pattern decouples sender and receiver of a request based on type of request.<br>
 The design pattern promotes loose coupling by allowing a series of handlers to be created in a linked list or chain.<br><br>
-The If-ElseIf-Else idiom is shown with this behaviour.<br><br>
-AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassA<br>
-AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassB<br>
-AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassC<br>
-objA.next(objB)<br>
-objB.next(objC)<br><br>
-Is it  up to the programmer/problem what it should be implemented in the condition and under which circumstances the next object in the chain is invoked.<br><br>
+The If-ElseIf-Else idiom is shown with this behaviour.
+* AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassA<br>
+* AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassB<br>
+* AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassC<br>
+* objA.next(objB)<br>
+* objB.next(objC)<br><br>
+Is it up to the programmer/problem what it should be implemented in the condition and under which circumstances the next object in the chain is invoked.<br><br>
 **Technical similarities**: Decoration patterns has also chain call but it is a one unit as structure, here you can just exit the chain.
 
 ### Command
@@ -23,10 +23,11 @@ The order is an interface which is implemented for any order. They orders are ba
 BaseClass(do1, do2) - Receiver<br>
 InterfaceOrder::execute -> DoOrder1(has BaseClase)::execute - wrapp BaseClass::do1<br>
 InterfaceOrder::execute -> DoOrder2(has BaseClase)::execute - wrapp BaseClass::do2<br>
-Invoker<br>
-1. (ListOfOrders) Add the order to the list. Execute later together with other commands.<br>
-2. (ListOfOrders) Add the order to the list and execute it.<br>
-3. The invoker wraps the commands.<br><br>
+Invoker - Three different approaches:<br>
+1. (ListOfOrders) Add the order to the list. Execute later together with other commands.
+2. (ListOfOrders) Add the order to the list and execute it.
+3. The invoker wraps the commands.
+
 The Orders are not more but claserization of the methods of the base class.<br>
 Centralazie functionality like "save text", can be used from button or other element.<br>
 
