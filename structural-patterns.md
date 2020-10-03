@@ -13,7 +13,7 @@ The question is does this technical construct is always an adapter design patter
 
 ## Bridge
 
-It is a class combination i.e. Shape and Color. In the table Letters and Numbers are defined as different class abstraction<br>
+It is a class combination i.e. shape and color. In the following table letters and numbers are defined as different class abstraction.<br>
 |        | A     | B     |
 | :------------- | :----------: | -----------: |
 |  0 | A0   | B0    |
@@ -30,7 +30,7 @@ Number -> 1 (has Letter)<br>
 
 ## Filter
 
-Filters collections by implemented criteria.<br><br>
+This pattern filters collections by implemented criteria.<br><br>
 Criteria::filter->Criteria1::filter<br>
 Criteria::filter->Criteria2::filter<br>
 Criteria::filter->Criteria3::filter<br><br>
