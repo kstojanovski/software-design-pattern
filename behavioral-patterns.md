@@ -150,8 +150,7 @@ On any different state invoking the same method from the context would have diff
 
 The iterator pattern is a design pattern that provides a means for the elements of an aggregate object to be accessed sequentially without knowledge of its structure.<br>
 This allows traversing of lists, trees and other structures in a standard manner.<br><br>
-Straightforward solution:<br><br>
-
+Straightforward solution:
 * Interface Interator<br>
    * public boolean hasNext();
    * public Object next();
@@ -162,4 +161,4 @@ Straightforward solution:<br><br>
    * private class InnerIterator implements hasNext()/next()
 * Client
    * initialize - ClassWithCollection objWithCollection
-   * iterate for(Iterator iter = objWithCollection.getIterator(); iter.hasNext();)
+   * iterate - for(Iterator iter = objWithCollection.getIterator(); iter.hasNext();)
