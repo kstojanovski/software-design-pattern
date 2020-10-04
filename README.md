@@ -14,16 +14,27 @@ The writing is based on the information from the following sites:
 * https://refactoring.guru/design-patterns
 * https://sourcemaking.com/design_patterns
 
-The design patterns are separated into three groups.
+### Gang of Four design Pattern
 
-###	Creational Patterns
+The "Gang of Four design Pattern" design patterns are separated into three groups.
+
+####	Creational Patterns
 These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.
-###	Structural Patterns
+####	Structural Patterns
 These design patterns concern class and object composition. Concept of inheritance is used to compose interfaces and define ways to compose objects to obtain new functionalities.
-###	Behavioral Patterns
+####	Behavioral Patterns
 These design patterns are specifically concerned with communication between objects.
 
 ---
 
 ### J2EE Patterns
+
 These design patterns are specifically concerned with the presentation tier. These patterns are identified by Sun Java Center.
+The J2EE Patterns can be separated in three groups:
+
+##### Presentation Layer Design Patterns
+
+##### Business Layer Design Patterns
+
+##### Integration Layer Design Patterns
+
