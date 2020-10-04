@@ -3,7 +3,7 @@
 ## Intercepting Filter
 
 ### Introduction
-Post and pre request processing is done within the filter.
+**Post and pre request processing** is done within the filter.
 The exist in the form of Filter Chain include multiple filters, or simply exist as one Filter.
 ### Structure
 * IFilter -> ClassFilter1
@@ -45,13 +45,14 @@ Based on the request, it decides which controller is the most adequate to handle
 * https://stackabuse.com/java-j2ee-design-patterns
 ### Notes
 * The Front Controller is most often used in Web Applications in the form of a Dispatcher Servlet.
+* The **if-condition** does do the **dispaching** by its evaluation.
 
 ---
 
 ## View Helper
 
 ### Introduction
-View Helper Pattern separates the static view such as JSPs from the processing of the business model data. 
+The View Helper pattern separates the static view from the dynamic processing such as JSPs based on the business model data.
 ### Structure
 * ClassModel
 * ClassViewHelper(has{adapts} Model)
@@ -75,6 +76,7 @@ View Helper Pattern separates the static view such as JSPs from the processing o
 * https://sites.google.com/a/sanjeevonline.com/technology/tutorials/corej2eepatterns/presentation-tier-patterns/view-helper
 ### Notes
 * Many exampels were related to JSP custom tag processing.
+* After recognition of the concrete processing class based on the ViewHelper the processing of the dynamic conntent is done.
 
 ---
 
@@ -105,7 +107,7 @@ The Composite Entity pattern represents a graph of objects, which when updated, 
 ### Source
 * https://stackabuse.com/java-j2ee-design-patterns
 ### Notes
-* This pattern looks like bounding 2 entities:
-** always writing to them all at once.
-** always reading to them all at once.
+* This pattern bounds the dependend entities and executes some operation on them in the same step like:
+   * writing to them.
+   * reading from them.
 * Poor flexibility when exending the number of the entities, because the data provider classes have to be modifed.
