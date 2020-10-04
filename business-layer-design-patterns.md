@@ -16,15 +16,17 @@ The Business Delegate pattern is used to decouple the presentation layer from th
 2. Set service to BusinessDelegate
 3. Create Client
 4. Invoke Client method process
-   *-> BusinessDelegate::process
-      *-> BusinessLookUp::getBusinessService (if-condition "servicetype")
-         *<- return IBusinessService
-      *-> IBusinessService::process();
+   * -> BusinessDelegate::process
+      * -> BusinessLookUp::getBusinessService (if-condition "servicetype")
+         * <- return IBusinessService
+      * -> IBusinessService::process();
 ### Source
 * https://stackabuse.com/java-j2ee-design-patterns
 ### Notes
 * Choose the apropriate service depend on the String "service type".
-* Looks very simialr like "Front Controller", if-conditon pattern.
+* Depend on the BusinessDelegate type state, which changes progressive, the corresponding service is used (returned).
+   * ***The BusinessDelegate-type controlls the service selection.***
+* Because of the if-conditon it looks simialr to the "Front Controller" pattern.
 
 ---
 
