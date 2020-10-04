@@ -67,9 +67,9 @@ View Helper Pattern separates the static view such as JSPs from the processing o
 * Create TagFile with the Model
 * Create View with List of Helpers with the objects.
 * For given view component check the Helper and adjust the content from the model.
-   *-> .i.e. CustomTag::processing("<fancy>SomeTest</fancy>") 
-      *-> Model::getName
-   *<- ("<bold>John Doe</bold>")
+   * -> .i.e. CustomTag::processing("<fancy>SomeTest</fancy>") 
+      * -> Model::getName
+   * <- ("<bold>John Doe</bold>")
 ### Source
 * https://www.oreilly.com/library/view/spring-5-design/9781788299459/612c5796-5133-4742-98c9-6679457eb481.xhtml
 * https://sites.google.com/a/sanjeevonline.com/technology/tutorials/corej2eepatterns/presentation-tier-patterns/view-helper
@@ -90,18 +90,18 @@ The Composite Entity pattern represents a graph of objects, which when updated, 
 * Client(has CompositeEntity)
 ### Behaviour
 1. Create Client c
-   *-> Creates CompositeEntity 
-      *-> CoarseGrainedObject 
-	     *->ClassModel1
-		 *->ClassModel2
+   * -> Creates CompositeEntity 
+      * -> CoarseGrainedObject 
+         * ->ClassModel1
+            * ->ClassModel2
 2. c.setData("model1Data", "model2Data")
-   *-> CompositeEntity::setData
-      *-> CoarseGrained::setData
-	     *-> Model1::setData, Model2::setData
+   * -> CompositeEntity::setData
+      * -> CoarseGrained::setData
+         * -> Model1::setData, Model2::setData
 3. c.print()		 
-   *-> CompositeEntity::getData
-      *-> CoarseGrained::getData
-	     *<- return String[]{Model1::getProperty, Model2::getProperty}
+   * -> CompositeEntity::getData
+      * -> CoarseGrained::getData
+         * <- return String[]{Model1::getProperty, Model2::getProperty}
 ### Source
 * https://stackabuse.com/java-j2ee-design-patterns
 ### Notes
