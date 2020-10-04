@@ -38,8 +38,8 @@ You want to provide access to one or more services using XML and web protocols.
 4. Create POJOJAXBroker
 5. Create EndpointProcessor
 6. EndpointProcessor::request - decide which broker to invoke next
-   *-> SessionBeanJAXBroker::doSomething
-      *-> BusinessService::doSomething
+   * -> SessionBeanJAXBroker::doSomething
+      * -> BusinessService::doSomething
 ### Source
 * http://www.corej2eepatterns.com/WebServiceBroker.htm
 ### Notes
