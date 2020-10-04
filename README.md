@@ -34,6 +34,8 @@ These design patterns are specifically concerned with communication between obje
 These design patterns are specifically concerned with the presentation tier. These patterns are identified by Sun Java Center.
 The J2EE Patterns can be separated in three groups:
 
+##### General Patterns
+
 ##### Presentation Layer Design Patterns
 
 ##### Business Layer Design Patterns
