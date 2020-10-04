@@ -14,6 +14,8 @@ The writing is based on the information from the following sites:
 * https://refactoring.guru/design-patterns
 * https://sourcemaking.com/design_patterns
 
+---
+
 ### Gang of Four design Pattern
 
 The "Gang of Four design Pattern" design patterns are separated into three groups.
