@@ -25,17 +25,23 @@ The factory method pattern is a design pattern that allows for the creation of o
 ### Introduction
 The singleton pattern is a design pattern that is used to ensure that a class can only have one **concurrent** instance. Whenever additional objects of a singleton class are required, the previously created, single instance is provided.
 ### Source
-http://www.blackwasp.co.uk/Singleton.aspx
+* http://www.blackwasp.co.uk/Singleton.aspx
 ### Notes
 * Only **the one and alowed object is created** from the class.
 * The thread safe implementation of this pattern needs to be used.
 
 ## Builder
-This pattern should be used when the object has many properties, also when not all properties need to be initialized at object creation.<br><br>
-Creational pattern where the properties can be add and concatinated on the builder object and as last method the creational "build" is invoked. New object with the wished type is returned.<br><br>
-**Example**: `new ObjectBuider.addProperty1("some").addProperty2("some").build();`<br><br>
-Example for this kind of usage is the StringBuilder.<br>
 
+### Introduction
+The builder pattern is a design pattern that allows for the step-by-step creation of complex objects using the correct sequence of actions. The construction is controlled by a director object that only needs to know the type of object it is to create.
+### Behaviour
+* `new ObjectBuider.addProperty1("some").addProperty2("some").build();`
+### Source
+* http://www.blackwasp.co.uk/Builder.aspx
+### Notes
+* This pattern should be used when the ***object has many properties***, also when ***not all properties need to be initialized at object creation***.
+* Creational pattern where the properties can be add and concatinated on the builder object and as last method the creational "build" is invoked. New object with the wished type is returned.<br><br>
+* Example for this kind of usage is the StringBuilder.<br>
 
 ## Prototype
 
