@@ -45,10 +45,14 @@ The builder pattern is a design pattern that allows for the step-by-step creatio
 
 ## Prototype
 
-This pattern is used when creation of object directly is costly. For example, an object is to be created after a costly database operation.<br>
-For this pattern cache is used where any object type has its presenter. On get-from-cache the own clone()-method is inviked and clone object are returned and used.<br>
-<br>
-This pattern is very similar to the Flightweight pattern to me because of the usage if cache and shared state
+### Introduction
+The prototype design pattern is a design pattern that is used to instantiate a class by copying, or cloning, the properties of an existing object. The new object is an exact copy of the prototype but permits modification without altering the original.
+### Source
+* http://www.blackwasp.co.uk/Prototype.aspx
+### Notes
+* This pattern is used when ***creation of object directly is costly***. For example, an object is to be created after a costly database operation.
+* For this pattern ***cache is used where any object type has its presenter***. On get-from-cache the own clone()-method is invoked and ***clone object are returned and used***.
+* This pattern is very similar to the Flightweight pattern to me because of the usage if cache and shared state.
 
 ## Object Pool
 
