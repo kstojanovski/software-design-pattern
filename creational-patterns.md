@@ -2,13 +2,23 @@
 
 ## Abstract Factory
 
-This pattern can also be called Factory of Factory of Factory ... of Object pattern.<br>
-It returnes Factory (see next pattern description) which create Object.
+### Introduction
+The abstract factory pattern is a design pattern that allows for the creation of groups of related objects without the requirement of specifying the exact concrete classes that will be used. One of a number of factory classes generates the object sets.
+### Source
+* http://www.blackwasp.co.uk/AbstractFactory.aspx
+### Notes
+* This pattern can also be called ***Factory of Factory of Factory ... of Object*** pattern.
+* It returnes Factory (see next pattern description) which create Object.
 
 ## Factory
 
-Class with mehtod which returns new created object of some type. The retrun value can also be generalazed object, therefore as retrun value interface can be declared.<br><br>
-Also parameter for an if-condition can be passed for runtime object type decision.
+### Introduction
+The factory method pattern is a design pattern that allows for the creation of objects without specifying the type of object that is to be created in code. A factory class contains a method that allows determination of the created type at run-time.
+### Source
+* http://www.blackwasp.co.uk/FactoryMethod.aspx
+### Notes
+* Class with *create*-mehtod which ***returns new created object***. The retrun value can also be generalazed object, therefore as return declaration an interface is declared.
+* Also parameter for an if-condition can be passed for runtime object type decision.
 
 ## Singleton
 
