@@ -17,13 +17,18 @@ The factory method pattern is a design pattern that allows for the creation of o
 ### Source
 * http://www.blackwasp.co.uk/FactoryMethod.aspx
 ### Notes
-* Class with *create*-mehtod which ***returns new created object***. The retrun value can also be generalazed object, therefore as return declaration an interface is declared.
+* Class with **create**-mehtod which ***returns new created object***. The retrun value can also be generalazed object, therefore as return declaration an interface is declared.
 * Also parameter for an if-condition can be passed for runtime object type decision.
 
 ## Singleton
 
-Only the one and alowed object is created from the class.<br>
-The thread safe implemnetation of this pattern needs to be used.
+### Introduction
+The singleton pattern is a design pattern that is used to ensure that a class can only have one **concurrent** instance. Whenever additional objects of a singleton class are required, the previously created, single instance is provided.
+### Source
+http://www.blackwasp.co.uk/Singleton.aspx
+### Notes
+* Only **the one and alowed object is created** from the class.
+* The thread safe implementation of this pattern needs to be used.
 
 ## Builder
 This pattern should be used when the object has many properties, also when not all properties need to be initialized at object creation.<br><br>
