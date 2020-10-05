@@ -3,7 +3,7 @@
 ## Motivation
 The motivation was to create mnemonic of the desing pattern derivated from my point of view. The text doesnt describes the pattern isself but how do I understand it.
 
-## Introduction
+## Sources
 
 The writing is based on the information from the following sites:
 * http://www.blackwasp.co.uk/GofPatterns.aspx
@@ -12,6 +12,7 @@ The writing is based on the information from the following sites:
 * https://www.javatpoint.com/design-patterns-in-java
 * https://refactoring.guru/design-patterns
 * https://sourcemaking.com/design_patterns
+* https://stackabuse.com/java-j2ee-design-patterns
 
 ---
 
@@ -43,7 +44,7 @@ More about this kind of patterns you can find [here](./presentation-layer-design
 More about this kind of patterns you can find [here](./business-layer-design-patterns.md).
 #### Integration Layer Design Patterns
 More about this kind of patterns you can find [here](./integration-layer-design-patterns.md).
-
+<br>
 The fourth group is fictive, it contains patterns which are not belog to the other three groups:
 #### General J2EE Patterns
 More about this kind of patterns you can find [here](./general-j2ee-patterns.md).
