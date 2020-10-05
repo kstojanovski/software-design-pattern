@@ -4,7 +4,6 @@
 The motivation was to create mnemonic of the desing pattern derivated from my point of view. The text doesnt describes the pattern isself but how do I understand it.
 
 ## Introduction
-Software design pattern were created with the book "Gang of Four design Pattern" in the year 1994/1995.
 
 The writing is based on the information from the following sites:
 * http://www.blackwasp.co.uk/GofPatterns.aspx
@@ -18,6 +17,7 @@ The writing is based on the information from the following sites:
 
 ### Gang of Four design Pattern
 
+Software design pattern were created with the book "Gang of Four design Pattern" in the year 1994/1995.<br>
 The "Gang of Four design Pattern" design patterns are separated into three groups.
 
 ####	Creational Patterns
@@ -37,11 +37,13 @@ More about this kind of patterns you can find [here](./behavioral-patterns.md).
 These design patterns are specifically concerned with the presentation tier. These patterns are identified by Sun Java Center.
 The J2EE Patterns can be separated in three groups:
 
-#### General J2EE Patterns
-More about this kind of patterns you can find [here](./general-j2ee-patterns.md).
 #### Presentation Layer Design Patterns
 More about this kind of patterns you can find [here](./presentation-layer-design-patterns.md).
 #### Business Layer Design Patterns
 More about this kind of patterns you can find [here](./business-layer-design-patterns.md).
 #### Integration Layer Design Patterns
 More about this kind of patterns you can find [here](./integration-layer-design-patterns.md).
+
+The fourth group is fictive, it contains patterns which are not belog to the other three groups:
+#### General J2EE Patterns
+More about this kind of patterns you can find [here](./general-j2ee-patterns.md).
