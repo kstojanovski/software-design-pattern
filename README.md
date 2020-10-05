@@ -31,8 +31,6 @@ More about this kind of patterns you can find [here](./structural-patterns.md).
 These design patterns are specifically concerned with communication between objects.<br>
 More about this kind of patterns you can find [here](./behavioral-patterns.md).
 
----
-
 ### J2EE Patterns
 
 These design patterns are specifically concerned with the presentation tier. These patterns are identified by Sun Java Center.
