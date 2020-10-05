@@ -42,7 +42,7 @@ More about this kind of patterns you can find [here](./presentation-layer-design
 More about this kind of patterns you can find [here](./business-layer-design-patterns.md).
 #### Integration Layer Design Patterns
 More about this kind of patterns you can find [here](./integration-layer-design-patterns.md).
-<br><br>
+<br><br><br>
 The fourth group is fictive, it contains patterns which are not belog to the other three groups:
 #### General J2EE Patterns
 More about this kind of patterns you can find [here](./general-j2ee-patterns.md).
