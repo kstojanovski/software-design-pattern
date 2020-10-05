@@ -40,8 +40,8 @@ The builder pattern is a design pattern that allows for the step-by-step creatio
 * http://www.blackwasp.co.uk/Builder.aspx
 ### Notes
 * This pattern should be used when the ***object has many properties***, also when ***not all properties need to be initialized at object creation***.
-* Creational pattern where the properties can be add and concatinated on the builder object and as last method the creational "build" is invoked. New object with the wished type is returned.<br><br>
-* Example for this kind of usage is the StringBuilder.<br>
+* Creational pattern where the properties can be add and concatinated on the builder object and as last method the creational "build" is invoked. New object with the wished type is returned.
+* Example for this kind of usage is the StringBuilder.
 
 ## Prototype
 
