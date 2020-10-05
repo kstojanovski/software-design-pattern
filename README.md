@@ -14,7 +14,7 @@ The writing is based on the information from the following sites:
 * https://sourcemaking.com/design_patterns
 * https://stackabuse.com/java-j2ee-design-patterns
 
----
+## Overview of the software design patterns
 
 ### Gang of Four design Pattern
 
