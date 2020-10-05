@@ -56,6 +56,11 @@ The prototype design pattern is a design pattern that is used to instantiate a c
 
 ## Object Pool
 
-It is used to reuse the object that are expensive to create such a connections to DB.<br>
-Therefore the implementatiob needs to be thread safe which means concurrency programming techiques are used for the implementation.<br>
-Object pool design pattern is essentially used in Web Container of the server for creating thread pools and data source pools to process the requests.
+### Introduction
+Object pooling can offer a significant performance boost; it is most effective in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high, and the number of instantiations in use at any one time is low.
+### Source
+* https://sourcemaking.com/design_patterns/object_pool
+### Notes
+* It is used to reuse the object that are expensive to create such a connections to DB.
+* Therefore the implementatiob needs to be thread safe which means concurrency programming techiques are used for the implementation.
+* Object pool design pattern is essentially used in Web Container of the server for creating thread pools and data source pools to process the requests.
