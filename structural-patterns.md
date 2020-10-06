@@ -27,8 +27,8 @@ The bridge pattern is a design pattern that separates the abstract elements of a
 
 ### Decorator
 
-Attach a flexible additional responsibilities to an object dynamically.<br>
-The Decorator Pattern is also known as Wrapper.
+#### Introduction
+The decorator pattern is a design pattern that extends the functionality of individual objects by wrapping them with one or more decorator classes. These decorators can modify existing members and add new methods and properties at run-time.
 #### Structure
 * ISomething -> ConcreteBaseA
 * ISomething -> ConcreteBasetB
@@ -37,11 +37,15 @@ The Decorator Pattern is also known as Wrapper.
 * AbstractDecorator -> ConcreteDecoratorB
 #### Behaviour
 1. ConcreteDecoratorA(ConcreteDecoratorB(ConcreteBaseA)), ConcreteDecoratorA(ConcreteDecoratorB(ConcreteBaseB))
-
-Where: number and order of decorator can be vary, at end base class is used.<br>
-Since the structure is the same the same method is used for invoke the "decorations".<br><br>
-Based on same interface.<br>
-The pattern Bridge is based on different interfaces.<br>
+   * Where: number and order of decorator can be vary, at end base class is used.
+#### Source
+#### Notes
+* ***Object of an concrete base class is created mostly inner in the nested structure creation but invoked as first object and it is used as base object for all other objects (decorators) which are decorating the base more and more as they are nested.***
+* Attach a flexible additional responsibilities to an object dynamically.
+* The Decorator Pattern is also known as Wrapper.
+* Because the structure is the same at all objects the same method is used for invoke the "decorations".
+* This pattern is based on same interface.
+* The pattern Bridge is based on different interfaces.
 
 ## Medium Structural Patterns
 
