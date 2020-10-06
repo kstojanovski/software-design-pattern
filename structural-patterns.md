@@ -4,18 +4,18 @@
 
 ### Bridge
 
-### Introduction
+#### Introduction
 The bridge pattern is a design pattern that separates the abstract elements of a class from its technical implementation. This provides a cleaner implementation of real-world objects and allows the implementation details to be changed easily.
-### Structure
+#### Structure
 * Letter -> A
 * Letter -> B
 * Number -> 0 (has Letter)
 * Number -> 1 (has Letter)
-### Source
+#### Source
 * http://www.blackwasp.co.uk/Bridge.aspx
 * https://www.javatpoint.com/bridge-pattern
 * https://refactoring.guru/design-patterns/bridge/java/example
-### Notes
+#### Notes
 |    |  A  | B  |
 | :- | :-: | -: |
 | 0  | A0  | B0 |
