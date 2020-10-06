@@ -59,8 +59,8 @@ The decorator pattern is a design pattern that extends the functionality of indi
 The adapter pattern is a design pattern that is used to allow two incompatible types to communicate. Where one class relies upon a specific interface that is not implemented by another class, the adapter acts as a translator between the two types.
 #### Structure
 There are several different implementation of this pattern.:
-***1. It is realize with a class which implements interface and extends class. The implemented interface method wrapps the method from the super class.***
-***2. It is realize with a class which implements interface and object reference. The implemented interface method wrapps the method from the object reference.***
+1. ***It is realize with a class which implements interface and extends class. The implemented interface method wrapps the method from the super class.***
+2. ***It is realize with a class which implements interface and object reference. The implemented interface method wrapps the method from the object reference.***
 * Second approach is recommended due to loose coupling.
 #### Source
 * http://www.blackwasp.co.uk/Adapter.aspx
