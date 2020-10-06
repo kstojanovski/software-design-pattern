@@ -55,15 +55,22 @@ The decorator pattern is a design pattern that extends the functionality of indi
 
 ### Adapter
 
-It implemented method from the interface is (wrappes) using also the method of the reference or super class.
+#### Introduction
+The adapter pattern is a design pattern that is used to allow two incompatible types to communicate. Where one class relies upon a specific interface that is not implemented by another class, the adapter acts as a translator between the two types.
 #### Structure
-There are several different implementation of this pattern.<br>
-1. It is realize with a class which implements interface and extends class. Its method of the interfaced in implemented wrapping the method of the class.<br>
-2. It is realize with a class which implements interface and object reference. Its method of the interfaced in implemented wrapping the method of the object reference.<br><br>
-Second one is recommended due to loose coupling.<br><br>
-The object of the implementation is a main object here which used the funtionality from the extended or reference object.<br><br>
-This pattern comes unconsciously when the class where this is used is extractred as interface and the method is part of the interface.<br>
-The question is does this technical construct is always an adapter design pattern?
+There are several different implementation of this pattern.:
+***1. It is realize with a class which implements interface and extends class. The implemented interface method wrapps the method from the super class.***
+***2. It is realize with a class which implements interface and object reference. The implemented interface method wrapps the method from the object reference.***
+* Second approach is recommended due to loose coupling.
+#### Source
+* http://www.blackwasp.co.uk/Adapter.aspx
+* https://www.javatpoint.com/adapter-pattern
+* https://refactoring.guru/design-patterns/adapter/java/example
+#### Notes
+* It implemented method from the interface is (wrappes) using also the method of the reference or super class.
+* The object of the implementation is a main object here which used the funtionality from the extended or reference object.
+* This pattern comes unconsciously when the class where this is used is extractred as interface and the method is part of the interface.
+* The question is does this technical construct is always an adapter design pattern?
 
 ### Composite
 
