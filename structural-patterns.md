@@ -4,20 +4,26 @@
 
 ### Bridge
 
-It is a class combination i.e. shape and color. In the following table letters and numbers are defined as different class abstraction.<br>
+### Introduction
+The bridge pattern is a design pattern that separates the abstract elements of a class from its technical implementation. This provides a cleaner implementation of real-world objects and allows the implementation details to be changed easily.
+### Structure
+* Letter -> A
+* Letter -> B
+* Number -> 0 (has Letter)
+* Number -> 1 (has Letter)
+### Source
+* http://www.blackwasp.co.uk/Bridge.aspx
+* https://www.javatpoint.com/bridge-pattern
+* https://refactoring.guru/design-patterns/bridge/java/example
+### Notes
 |    |  A  | B  |
 | :- | :-: | -: |
 | 0  | A0  | B0 |
 | 1  | A1  | B1 |
-
-Contains first interface (main) and implementations. (Abstraction)<br>
-Second interface and implementations which also contains the first one as reference. (Implementation)<br>
-This way the both implementations as sub classes can be developed independently.
-#### Structure
-* Letter -> A<br>
-* Letter -> B<br>
-* Number -> 0 (has Letter)<br>
-* Number -> 1 (has Letter)<br>
+* It is a class combination i.e. shape and color. In the following table letters and numbers are defined as different class abstraction.
+* Contains first (main) interface and implementations (***Abstraction***).
+* Second interface and implementations which also contains the first one as reference (***Implementation***).
+* This way the both implementations as sub classes can be developed independently.
 
 ### Decorator
 
