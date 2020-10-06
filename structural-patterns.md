@@ -86,31 +86,44 @@ The composite pattern is a design pattern that is used when creating hierarchica
 * https://sourcemaking.com/design_patterns/composite/java/2
 #### Notes
 * Composite pattern is used where we need to treat a group of objects in similar way as a single object.
-* Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
+* ***Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.***
 
 ### Flightweight
 
-The flyweight pattern is a design pattern that is used to minimise resource usage when working with very large numbers of objects.<br><br>
-Cache is used for this pattern.
+#### Introduction
+The flyweight pattern is a design pattern that is used to minimise resource usage when working with very large numbers of objects. When creating many thousands of identical objects, stateless flyweights can lower the memory used to a manageable level.
+#### Structure
+* Cache is used for this pattern.
 #### Behaviour
 1. getObjectFromCache - if object doesn't exsit create new one otherwise return the object.
 2. Manipulate the necessary properties.
 3. Use the object.
-
-This pattern should be used if the shared state is legal, if the shared proerties still fitulls the recommendations (very similar or identical objects).<br><br>
-Becuase it used cache it looks similar lie the prototype pattern.
+#### Source
+* http://www.blackwasp.co.uk/Flyweight.aspx
+* https://www.javatpoint.com/flyweight-pattern
+* https://refactoring.guru/design-patterns/flyweight/java/example
+#### Notes
+* ***The flyweight pattern is a design pattern that is used to minimise resource usage when working with very large numbers of objects.***
+* This pattern should be used if the shared state is legal, if the shared proerties still fitulls the recommendations (very similar or identical objects).<br><br>
+* Becuase it used cache it looks similar lie the prototype pattern.
 
 ### Proxy
 
-In proxy pattern, a class represents functionality of another class. Proxies can improve efficiency and enhance functionality.
+#### Introduction
+The proxy pattern is a design pattern that creates a surrogate, or placeholder class. Proxy instances accept requests from client objects, pass them to the underlying object and return the results. Proxies can improve efficiency and enhance functionality.
 #### Structure
 * Interface::do -> RealObject::do
 * Interface::do -> ProxyObject::do (has RealObject) - if-condiiton is true then get/create RealObject use do-method
 #### Behaviour
-Client operated one ProxyObject<br><br>
-Not only one but many methods can be used defined in the iterface.<br><br>
-This pattern can be used as: Cache Proxy, Protection Proxy, Remote Proxy, Smart Proxy, Virtual Proxy.<br>
-http://www.blackwasp.co.uk/Proxy.aspx
+1. Client operated one ProxyObject<br><br>
+#### Source
+* http://www.blackwasp.co.uk/Proxy.aspx
+* https://www.javatpoint.com/proxy-pattern
+#### Notes
+* ***Instead wokring on real objects the proxy is used***
+* In proxy pattern, a class represents functionality of another class. Proxies can improve efficiency and enhance functionality.
+* Not only one but many methods can be used defined in the iterface.
+* ***This pattern can be used as: Cache Proxy, Protection Proxy, Remote Proxy, Smart Proxy, Virtual Proxy.***
 
 ## Weak Structural Patterns
 
