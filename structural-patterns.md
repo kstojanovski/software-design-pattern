@@ -171,11 +171,10 @@ ClassFacade::doVertical -> (ClassA::doOne, ClassA::dOther)<br>
 The private class data design pattern seeks to reduce exposure of attributes by limiting their visibility. It reduces the number of class attributes by encapsulating them in single Data object. It allows the class designer to remove write privilege of attributes that are intended to be set only during construction, even from methods of the target class.
 #### Structure
 BaseClass - in contructor init the DataClass from the arguments. DataClass is declated final.<br>
-DataClass with private proerties, setters and getters.<br><br>
+DataClass with private proerties, setters and getters.
 #### Source
 * https://sourcemaking.com/design_patterns/private_class_data
 * https://en.wikipedia.org/wiki/Private_class_data_pattern
 #### Notes
 * Separate data from methods that use it. Providing new type of final - final after constructor.
 * I can not see it the momen the real benfit of this construct.
-
