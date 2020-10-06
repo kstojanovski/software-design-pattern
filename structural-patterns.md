@@ -143,8 +143,8 @@ Filter pattern or Criteria pattern is a design pattern that enables developers t
 
 ### Facade
 
-Facade pattern hides the complexities of the system and provides an interface to the client using which the client can access the system.<br>
-It hides the classes of the subsistem trough its existence.
+#### Introduction
+The facade pattern is a design pattern that is used to simplify access to functionality in complex or poorly designed subsystems. The facade class provides a simple, single-class interface that hides the implementation details of the underlying code.
 #### Structure
 * Subsystem (Package)
 * ClassA, ClassB, ClassC
@@ -155,6 +155,15 @@ ClassFacade::do -> (ClassA::everyMethod, ClassB::everyMethod, ClassC::everyMetho
 or many methods which bundle the methods of the Subclasses.<br>
 ClassFacade::doHorizontal -> (ClassA::doOne, ClassB::doOne, ClassC::doOne)<br>
 ClassFacade::doVertical -> (ClassA::doOne, ClassA::dOther)<br>
+#### Source
+* http://www.blackwasp.co.uk/Facade.aspx
+* https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
+* https://www.javatpoint.com/facade-pattern
+* https://refactoring.guru/design-patterns/facade/java/example
+* https://sourcemaking.com/design_patterns/facade/java/1
+#### Notes
+* Facade pattern hides the complexities of the system and provides an interface to the client. 
+* ***It hides the classes of the subsistem trough its existence.***
 
 ### Private Class Data
 
