@@ -176,5 +176,6 @@ The private class data design pattern seeks to reduce exposure of attributes by 
 * https://sourcemaking.com/design_patterns/private_class_data
 * https://en.wikipedia.org/wiki/Private_class_data_pattern
 #### Notes
-* Separate data from methods that use it. Providing new type of final - final after constructor.
-* I can not see it the momen the real benfit of this construct.
+* ***Separate data from methods that use it.*** 
+* Providing new type of final - final after constructor.
+
