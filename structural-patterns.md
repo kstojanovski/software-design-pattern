@@ -151,10 +151,10 @@ The facade pattern is a design pattern that is used to simplify access to functi
 * ClassFacade uses ClassA, ClassB, ClassC.
 #### Behaviour
 Either you have public method which fully uses their functionality<br>
-ClassFacade::do -> (ClassA::everyMethod, ClassB::everyMethod, ClassC::everyMethod)<br>
+* ClassFacade::do -> (ClassA::everyMethod, ClassB::everyMethod, ClassC::everyMethod)<br>
 or many methods which bundle the methods of the Subclasses.<br>
-ClassFacade::doHorizontal -> (ClassA::doOne, ClassB::doOne, ClassC::doOne)<br>
-ClassFacade::doVertical -> (ClassA::doOne, ClassA::dOther)<br>
+* ClassFacade::doHorizontal -> (ClassA::doOne, ClassB::doOne, ClassC::doOne)<br>
+* ClassFacade::doVertical -> (ClassA::doOne, ClassA::dOther)<br>
 #### Source
 * http://www.blackwasp.co.uk/Facade.aspx
 * https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
@@ -170,8 +170,8 @@ ClassFacade::doVertical -> (ClassA::doOne, ClassA::dOther)<br>
 #### Introduction
 The private class data design pattern seeks to reduce exposure of attributes by limiting their visibility. It reduces the number of class attributes by encapsulating them in single Data object. It allows the class designer to remove write privilege of attributes that are intended to be set only during construction, even from methods of the target class.
 #### Structure
-BaseClass - in contructor init the DataClass from the arguments. DataClass is declated final.<br>
-DataClass with private proerties, setters and getters.
+* BaseClass - in contructor init the DataClass from the arguments. DataClass is declated final.<br>
+* DataClass with private proerties, setters and getters.
 #### Source
 * https://sourcemaking.com/design_patterns/private_class_data
 * https://en.wikipedia.org/wiki/Private_class_data_pattern
