@@ -74,10 +74,19 @@ There are several different implementation of this pattern.:
 
 ### Composite
 
-Composite pattern is used where we need to treat a group of objects in similar way as a single object.<br>
-Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
+#### Introduction
+The composite pattern is a design pattern that is used when creating hierarchical object models. The pattern defines a manner in which to design recursive tree structures of objects, where individual objects and groups can be accessed in the same manner.
 #### Structure
-Compose (has list if Compose).
+* Compose (has list of Compose objects).
+#### Source
+* http://www.blackwasp.co.uk/Composite.aspx
+* https://www.javatpoint.com/composite-pattern
+* https://refactoring.guru/design-patterns/composite/java/example
+* https://sourcemaking.com/design_patterns/composite/java/3
+* https://sourcemaking.com/design_patterns/composite/java/2
+#### Notes
+* Composite pattern is used where we need to treat a group of objects in similar way as a single object.
+* Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
 
 ### Flightweight
 
