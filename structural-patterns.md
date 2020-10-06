@@ -115,7 +115,7 @@ The proxy pattern is a design pattern that creates a surrogate, or placeholder c
 * Interface::do -> RealObject::do
 * Interface::do -> ProxyObject::do (has RealObject) - if-condiiton is true then get/create RealObject use do-method
 #### Behaviour
-1. Client operated one ProxyObject<br><br>
+1. Client operated one ProxyObject
 #### Source
 * http://www.blackwasp.co.uk/Proxy.aspx
 * https://www.javatpoint.com/proxy-pattern
@@ -129,12 +129,17 @@ The proxy pattern is a design pattern that creates a surrogate, or placeholder c
 
 ### Filter
 
-This pattern filters collections by implemented criteria.
+#### Introduction
+Filter pattern or Criteria pattern is a design pattern that enables developers to filter a set of objects using different criteria and chaining them in a decoupled way through logical operations. This type of design pattern comes under structural pattern as this pattern combines multiple criteria to obtain single criteria.
 #### Structure
 * Criteria::filter->Criteria1::filter
 * Criteria::filter->Criteria2::filter
 * Criteria::filter->Criteria3::filter
 * Criteria1::filter(someList) // returns filtered collection
+#### Source
+* https://www.tutorialspoint.com/design_pattern/filter_pattern.htm
+#### Notes
+* ***This pattern filters collections by implemented criteria.***
 
 ### Facade
 
