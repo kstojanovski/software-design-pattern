@@ -39,6 +39,10 @@ The decorator pattern is a design pattern that extends the functionality of indi
 1. ConcreteDecoratorA(ConcreteDecoratorB(ConcreteBaseA)), ConcreteDecoratorA(ConcreteDecoratorB(ConcreteBaseB))
    * Where: number and order of decorator can be vary, at end base class is used.
 #### Source
+* http://www.blackwasp.co.uk/Decorator.aspx
+* https://www.javatpoint.com/decorator-pattern
+* https://refactoring.guru/design-patterns/decorator/java/example
+* https://sourcemaking.com/design_patterns/decorator/java/3
 #### Notes
 * ***Object of an concrete base class is created mostly inner in the nested structure creation but invoked as first object and it is used as base object for all other objects (decorators) which are decorating the base more and more as they are nested.***
 * Attach a flexible additional responsibilities to an object dynamically.
