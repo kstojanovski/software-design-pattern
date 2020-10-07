@@ -145,18 +145,26 @@ The visitor pattern is a design pattern that separates a set of structured data 
 
 ### Interpreter
 
-Interpreter pattern provides a way to evaluate language grammar or expression. This type of pattern<br>
-This pattern involves implementing an expression interface which tells to interpret a particular context.<br>
-This pattern is used in SQL parsing, symbol processing engine etc.
+#### Introduction
+The interpreter pattern is a design pattern that is useful when developing domain-specific languages or notations. The pattern allows the grammar for such a notation to be represented in an object-oriented fashion that can easily be extended.
 #### Structure
 * Interface::interpret(context) -> TerminalExoression::interpret(context)
 * Interface::interpret(context) -> NonTerminalExoression1::interpret(context)
 * Interface::interpret(context) -> NonTerminalExoression2::interpret(context)
+#### Source
+* http://www.blackwasp.co.uk/Interpreter.aspx
+* https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm
+* https://www.javatpoint.com/interpreter-pattern
+* https://sourcemaking.com/design_patterns/interpreter/java/2
+#### Notes
+* ***Interpreter pattern provides a way to evaluate language grammar or expression.***
+* This pattern involves implementing an expression interface which tells to interpret a particular context.
+* This pattern is used in SQL parsing, symbol processing engine etc.
 
 ### Strategy
 
-he strategy pattern is a design pattern that allows a set of similar algorithms to be defined and encapsulated in their own classes.<br>
-The algorithm to be used for a particular purpose may then be selected at run-time according to your requirements.
+#### Introduction
+The strategy pattern is a design pattern that allows a set of similar algorithms to be defined and encapsulated in their own classes. The algorithm to be used for a particular purpose may then be selected at run-time according to your requirements.
 #### Structure
 * IStartegy(::calculation) -> Algorithm1
 * IStartegy(::calculation) -> Algorithm2
@@ -164,8 +172,15 @@ The algorithm to be used for a particular purpose may then be selected at run-ti
 #### Behaviour
 1. Create Client.
 2. Use Algorithm class by purpose.
-
-**My style**: The choosing algorithm can be encapsulated into the object creation method as part of the factory pattern.
+#### Source
+* http://www.blackwasp.co.uk/Strategy.aspx
+* https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
+* https://www.javatpoint.com/strategy-pattern
+* https://refactoring.guru/design-patterns/strategy/java/example
+* https://sourcemaking.com/design_patterns/strategy/java/1
+#### Notes
+* ***This pattern is used to summarize algorithm classes which have identlcal entry point.***
+* The choosing algorithm can be encapsulated into the object creation method as part of the factory pattern.
 
 ### Template Method
 
