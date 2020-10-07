@@ -30,9 +30,8 @@ The chain of responsibility pattern is a design pattern that defines a linked li
 
 ### Command
 
-Command pattern is a data driven design pattern that enables all of the information for a request to be contained within a single object.<br>
-The command can then be invoked as required, often as part of a batch of queued commands with rollback capabilities.<br><br>
-The order is an interface which is implemented for any order. They orders are based on the methods of the base class.
+#### Introduction
+The command pattern is a design pattern that enables all of the information for a request to be contained within a single object. The command can then be invoked as required, often as part of a batch of queued commands with rollback capabilities.
 #### Structure
 * BaseClass(do1, do2) - Receiver
 * InterfaceOrder::execute -> DoOrder1(has BaseClase)::execute - wrapp BaseClass::do1
@@ -42,9 +41,19 @@ The order is an interface which is implemented for any order. They orders are ba
 1. (ListOfOrders) Add the order to the list. Execute later together with other commands.
 2. (ListOfOrders) Add the order to the list and execute it.
 3. The invoker wraps the commands.
-
-The Orders are not more but claserization of the methods of the base class.<br>
-Centralazie functionality like "save text", can be used from button or other element.<br>
+#### Source
+* http://www.blackwasp.co.uk/Command.aspx
+* https://www.tutorialspoint.com/design_pattern/command_pattern.htm
+* https://www.javatpoint.com/command-pattern
+* https://refactoring.guru/design-patterns/command/java/example
+* https://sourcemaking.com/design_patterns/command/java/1
+#### Notes
+* Command pattern is a data driven design pattern that enables all of the information for a request to be contained within a single object.
+* The command can then be invoked as required, often as part of a batch of queued commands with rollback capabilities.<br><br>
+* The order is an interface which is implemented for any order. They orders are based on the methods of the base class.
+* The Orders are not more but claserization of the methods of the base class.
+* Centralazie functionality like "save text", can be used from button or other element.
+* ***The command pattern is based on the reciever class which can be also named as base class. Based on its properties command classes are defined and used to execute the setter/getter of the properties.***
 
 ### Mediator
 
