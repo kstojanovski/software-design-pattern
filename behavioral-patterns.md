@@ -87,24 +87,32 @@ The mediator pattern is a design pattern that promotes loose coupling of objects
 
 ### Observer
 
-The observer pattern is a design pattern that defines a link between objects so that when one object's state changes, all dependent objects are updated automatically.
+#### Introduction
+The observer pattern is a design pattern that defines a link between objects so that when one object's state changes, all dependent objects are updated automatically. This pattern allows communication between objects in a loosely coupled manner.
 #### Structure
 * Subject(has list of IObserver, method "notifyAll" - intrates trough the IObserver::update)<br>
 * IObserver(has Subject, method "update")
-* IObserver -> ObserverA<br>
-* IObserver -> ObserverB<br>
-* IObserver -> ObserverC<br><br>
+* IObserver -> ObserverA
+* IObserver -> ObserverB
+* IObserver -> ObserverC
 #### Behaviour
 1. New Subject
 2. Create the Observer with the subject object as parameter and add this observer into the list of subjects.
 3. Setting the state in Subject invoked notifyAll.
-
-This pattern from the interface/class relation point of view looks very similar to the mediator pattern.<br>
-To use this pattern in Java you can the implementation from util package:<br>
-* interface java.util.Observer <br>
-* public class java.util.Observable
-
-**Technical similarities**: It looks very similar to mediator pattern.
+#### Source
+* http://www.blackwasp.co.uk/Observer.aspx
+* https://www.tutorialspoint.com/design_pattern/observer_pattern.htm
+* https://www.javatpoint.com/observer-pattern
+* https://refactoring.guru/design-patterns/observer/java/example
+* https://sourcemaking.com/design_patterns/observer/java/1
+* https://sourcemaking.com/design_patterns/observer/java/2
+#### Notes
+* ***The observer pattern is a design pattern that defines a link between objects so that when one object's state changes, all dependent objects are updated automatically.***
+* This pattern from the interface/class relation point of view looks very similar to the mediator pattern.
+* To use this pattern in Java you can the implementation from util package:
+   * interface java.util.Observer
+   * public class java.util.Observable
+* Technical similarities: It looks very similar to mediator pattern.
 
 ### Visitor
 
