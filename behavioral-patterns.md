@@ -184,8 +184,8 @@ The strategy pattern is a design pattern that allows a set of similar algorithms
 
 ### Template Method
 
-The template method pattern is a design pattern that allows a group of interchangeable, similarly structured, multi-step algorithms to be defined.<br>
-Each algorithm follows the same series of actions but provides a different implementation of the steps.
+#### Introduction
+The template method pattern is a design pattern that allows a group of interchangeable, similarly structured, multi-step algorithms to be defined. Each algorithm follows the same series of actions but provides a different implementation of the steps.
 #### Structure
 * AbstractClass(::severalMethods)<br>
 * AbstractClass -> Algorithm1<br>
@@ -193,6 +193,14 @@ Each algorithm follows the same series of actions but provides a different imple
 * AbstractClass -> Algorithm3<br><br>
 #### Behaviour
 1. Use the propriate calculcations by choosing the related Algorith class.
+#### Source
+* http://www.blackwasp.co.uk/TemplateMethod.aspx
+* https://www.tutorialspoint.com/design_pattern/template_pattern.htm
+* https://www.javatpoint.com/template-pattern
+* https://refactoring.guru/design-patterns/template-method/java/example
+* https://sourcemaking.com/design_patterns/template_method/java/2
+#### Notes
+* ***This pattern is used when the algortihms have similar structure where the method are reasonable spitted and exchangeable.***
 
 ## State Behaviour Patterns
 
