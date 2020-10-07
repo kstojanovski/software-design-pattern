@@ -49,7 +49,7 @@ The command pattern is a design pattern that enables all of the information for 
 * https://sourcemaking.com/design_patterns/command/java/1
 #### Notes
 * Command pattern is a data driven design pattern that enables all of the information for a request to be contained within a single object.
-* The command can then be invoked as required, often as part of a batch of queued commands with rollback capabilities.<br><br>
+* The command can then be invoked as required, often as part of a batch of queued commands with rollback capabilities.
 * The order is an interface which is implemented for any order. They orders are based on the methods of the base class.
 * The Orders are not more but claserization of the methods of the base class.
 * Centralazie functionality like "save text", can be used from button or other element.
@@ -57,10 +57,8 @@ The command pattern is a design pattern that enables all of the information for 
 
 ### Mediator
 
-The mediator pattern is a design pattern that promotes loose coupling of objects by removing the need for classes to communicate with each other directly.<br>
-Instead, mediator objects are used to encapsulate and centralise the interactions between classes.<br><br>
-Any Colleague need to have the mediatorObj.<br>
-On other side the mediatorObj (ConcreteMediator) has to contain the references of the Colleagues.
+#### Introduction
+The mediator pattern is a design pattern that promotes loose coupling of objects by removing the need for classes to communicate with each other directly. Instead, mediator objects are used to encapsulate and centralise the interactions between classes.
 #### Structure
 * IMediator::method0()-> ConcreteMediator::method0() // setter/getter on all Concrete Colleague classes
 * ColleagueBase(has a Mediator m) -> ColleagueA (can call m.method0())
@@ -71,9 +69,21 @@ On other side the mediatorObj (ConcreteMediator) has to contain the references o
 2. ColleagueA(m) cA is created, m.setCA(cA)
 3. ColleagueB(m) cB is created, m.setCA(cB)
 4. The methods od the Colleagues can be invoked and the data should go trough the mediator.
-
-Should the Mediator need to be singleton?<br>
-**Technical similarities**: It looks very similar to observer pattern.
+#### Source
+* http://www.blackwasp.co.uk/Mediator.aspx
+* https://www.baeldung.com/java-mediator-pattern
+* https://www.tutorialspoint.com/design_pattern/mediator_pattern.htm
+* https://www.javatpoint.com/mediator-pattern
+* https://refactoring.guru/design-patterns/mediator/java/example
+* https://sourcemaking.com/design_patterns/mediator/java/2
+#### Notes
+* The mediator pattern is a design pattern that promotes loose coupling of objects by removing the need for classes to communicate with each other directly.
+* Instead, mediator objects are used to encapsulate and centralise the interactions between classes.
+* Any Colleague need to have the mediatorObj.
+* On other side the mediatorObj (ConcreteMediator) has to contain the references of the Colleagues.
+* Should the Mediator need to be singleton?
+* Technical similarities: It looks very similar to observer pattern.
+* ***Any data flow should get through the mediator class, thats why any of other classes have reference of the mediator and the mediator has references of them.***
 
 ### Observer
 
