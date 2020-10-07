@@ -269,10 +269,10 @@ The state pattern is a design pattern that allows an object to completely change
 
 ### Iterator
 
-The iterator pattern is a design pattern that provides a means for the elements of an aggregate object to be accessed sequentially without knowledge of its structure.<br>
-This allows traversing of lists, trees and other structures in a standard manner.<br><br>
-Straightforward solution:
+#### Introduction
+The iterator pattern is a design pattern that provides a means for the elements of an aggregate object to be accessed sequentially without knowledge of its structure. This allows traversing of lists, trees and other structures in a standard manner.
 #### Structure
+Straightforward solution:
 * Interface Interator<br>
    * public boolean hasNext();
    * public Object next();
@@ -281,7 +281,17 @@ Straightforward solution:
 * Container -> ClassWithCollection
    * getIterator returned InnerIterator()
    * private class InnerIterator implements hasNext()/next()
-#### Behaviour   
+#### Behaviour
 * Client
    * initialize - ClassWithCollection objWithCollection
    * iterate - for(Iterator iter = objWithCollection.getIterator(); iter.hasNext();)
+#### Source
+* http://www.blackwasp.co.uk/Iterator.aspx
+* https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm
+* https://www.javatpoint.com/iterator-pattern
+* https://refactoring.guru/design-patterns/iterator/java/example
+* https://sourcemaking.com/design_patterns/iterator/java/2
+* https://sourcemaking.com/design_patterns/iterator/java/1
+#### Notes
+* ***This pattern is used for collection iteration.***
+* Inner class is used for the Iterator, same level as the collection.
