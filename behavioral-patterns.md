@@ -206,7 +206,8 @@ The template method pattern is a design pattern that allows a group of interchan
 
 ### Memento
 
-Memento pattern is used to restore state of an object to a previous state.
+#### Introduction
+The memento pattern is a design pattern that permits the current state of an object to be stored without breaking the rules of encapsulation. The originating object can be modified as required but can be restored to the saved state at any time.
 #### Structure
 * Memento(set/get State) - State storage unit.
 * Originator(hasMemeto - saveStateToMemento/getStateFromMemento, get/set State)
@@ -215,6 +216,14 @@ Memento pattern is used to restore state of an object to a previous state.
 1. State structure needs to be same in both classes.
 2 Originator on saveStateToMemento creates new Memmento with its current state and returns it.
 2 Originator on getStateFromMemento sets the state from Memento as argument to Orginator.
+#### Source
+* http://www.blackwasp.co.uk/Memento.aspx
+* https://www.tutorialspoint.com/design_pattern/memento_pattern.htm
+* https://www.javatpoint.com/memento-pattern
+* https://refactoring.guru/design-patterns/memento/java/example
+* https://sourcemaking.com/design_patterns/memento/java/1
+#### Notes
+* ***Memento pattern is used to restore state of an object to a previous state.***
 
 ### Null Object
 
