@@ -227,12 +227,19 @@ The memento pattern is a design pattern that permits the current state of an obj
 
 ### Null Object
 
-Design where "nothing will come of nothing".<br>
-The Null object pattern is a design pattern that simplifies the use of dependencies that can be undefined. This is achieved by using instances of a concrete class that implements a known interface, instead of null references.
+#### Introduction
+In Null Object pattern, a null object replaces check of NULL object instance. Instead of putting if check for a null value, Null Object reflects a do nothing relationship. Such Null object can also be used to provide default behaviour in case data is not available.
 #### Structure
 * AbstractClass -> ConcreteClass
 * AbstractClass -> NullClass
 * ClientClass(List<AbstractClass>)::get -> if nothing found then return NullClass.
+#### Source
+* https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm
+* https://sourcemaking.com/design_patterns/null_object/java/1
+#### Notes
+* Design where "nothing will come of nothing".<br>
+* The Null object pattern is a design pattern that simplifies the use of dependencies that can be undefined. This is achieved by using instances of a concrete class that implements a known interface, instead of null references.
+* ***The null object is a presentation of an object in case of null with well defined structure.***  
 
 ### State
 
