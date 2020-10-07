@@ -116,8 +116,8 @@ The observer pattern is a design pattern that defines a link between objects so 
 
 ### Visitor
 
-The visitor pattern is a design pattern that separates a set of structured data from the functionality that may be performed upon it.<br>
-This promotes loose coupling and enables additional operations to be added without modifying the data classes.
+#### Introduction
+The visitor pattern is a design pattern that separates a set of structured data from the functionality that may be performed upon it. This promotes loose coupling and enables additional operations to be added without modifying the data classes.
 #### Structure
 * InterfaceElement(::accept(Visitor)) -> ConcreteElementA - lightWeight classes withou much functionallity
 * InterfaceElement(::accept(Visitor)) -> ConcreteElementB
@@ -126,10 +126,20 @@ This promotes loose coupling and enables additional operations to be added witho
 * InterfaceVisitor(visitMethod for any concrete Visitor) -> Visitor2
 #### Behaviour
 1. Initialize Elements as List.
-2. Define Visitors<br>
-3. Iterate trough the elements and invoke the accept with the Visitors.<br><br>
+2. Define Visitors
+3. Iterate trough the elements and invoke the accept with the Visitors.
+#### Source
+* http://www.blackwasp.co.uk/Visitor.aspx
+* https://www.tutorialspoint.com/design_pattern/visitor_pattern.htm
+* https://refactoring.guru/design-patterns/visitor/java/example
+* https://sourcemaking.com/design_patterns/visitor/java/1
+* https://sourcemaking.com/design_patterns/visitor/java/3
+* https://sourcemaking.com/design_patterns/visitor/java/4
+#### Notes
+* The visitor pattern is a design pattern that separates a set of structured data from the functionality that may be performed upon it.
+* This promotes loose coupling and enables additional operations to be added without modifying the data classes.
+* ***The logic is placed in the visitor and operates on the element which invoked the accept(Visitor) method. Any visitor implements elements specific methods for visting which means the number of the different methods is the same as for the different element types***
 
-The logic is placed in the visitor and operates on the element which invoked the accept(Visitor)
 
 ## Algorithm Behaviour Patterns
 
