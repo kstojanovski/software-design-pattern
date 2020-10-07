@@ -22,9 +22,9 @@ The chain of responsibility pattern is a design pattern that defines a linked li
 * https://sourcemaking.com/design_patterns/chain_of_responsibility/java/2
 #### Notes
 * As the name suggests, the chain of responsibility pattern creates a chain of receiver objects for a request. This pattern decouples sender and receiver of a request based on type of request.
-* The design pattern promotes loose coupling by allowing a series of handlers to be created in a linked list or chain.<br><br>
+* The design pattern promotes loose coupling by allowing a series of handlers to be created in a linked list or chain.
 * The If-ElseIf-Else idiom is shown with this behaviour.
-* Is it up to the programmer/problem what it should be implemented in the condition and under which circumstances the next object in the chain is invoked.<br><br>
+* Is it up to the programmer/problem what it should be implemented in the condition and under which circumstances the next object in the chain is invoked.
 * Technical similarities: Decoration patterns has also chain call but it is a one unit as structure, here you can just exit the chain.
 * ***Chained objects are passing the data from one link to another until the all links are processed or some of them consumed the process and breaked it and returned the value or changed state of some object.***
 
