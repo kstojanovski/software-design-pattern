@@ -243,21 +243,27 @@ In Null Object pattern, a null object replaces check of NULL object instance. In
 
 ### State
 
-The state pattern is a design pattern that allows an object to completely change its behaviour depending upon its current internal state. <br>
-By substituting classes within a defined context, the state object appears to change its type at run-time.
+#### Introduction
+The state pattern is a design pattern that allows an object to completely change its behaviour depending upon its current internal state. By substituting classes within a defined context, the state object appears to change its type at run-time.
 #### Structure
-* ContextClass(has State)<br>
-* IState (has method defined which behave differently in the implemnetations)<br>
-* IState -> StateA<br>
-* IState -> StateB<br>
-* IState -> StateC<br><br>
+* ContextClass(has State)
+* IState (has method defined which behave differently in the implemnetations)
+* IState -> StateA
+* IState -> StateB
+* IState -> StateC
 #### Behaviour
 1. Create ContextClass with init State.
-2. Invoke State1::doMetho(Context) changes state.
-3. Invoke State2::doMetho(Context) changes state.
-4. Invoke State3::doMetho(Context) changes state.
-
-On any different state invoking the same method from the context would have different output.<br>
+2. Invoke State1::doMethod(Context) changes state.
+3. Invoke State2::doMethod(Context) changes state.
+4. Invoke State3::doMethod(Context) changes state.
+#### Source
+* http://www.blackwasp.co.uk/State.aspx
+* https://www.tutorialspoint.com/design_pattern/state_pattern.htm
+* https://www.javatpoint.com/state-pattern
+* https://refactoring.guru/design-patterns/state/java/example
+#### Notes
+* Base class has state reference which changes, when necessary, by referencing other state object which implicit exchange of the method logic.
+* On any different state invoking the same method from the context would have different output.
 
 ## Other Behaviour Patterns
 
