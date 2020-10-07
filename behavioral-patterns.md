@@ -262,7 +262,7 @@ The state pattern is a design pattern that allows an object to completely change
 * https://www.javatpoint.com/state-pattern
 * https://refactoring.guru/design-patterns/state/java/example
 #### Notes
-* Base class has state reference which changes, when necessary, by referencing other state object which implicit exchange of the method logic.
+* ***Base class has state reference which changes, when necessary, by referencing other state object which implicit exchange of the method logic.***
 * On any different state invoking the same method from the context would have different output.
 
 ## Other Behaviour Patterns
