@@ -4,20 +4,29 @@
 
 ### Chain of Responsibility
 
-As the name suggests, the chain of responsibility pattern creates a chain of receiver objects for a request. This pattern decouples sender and receiver of a request based on type of request.<br>
-The design pattern promotes loose coupling by allowing a series of handlers to be created in a linked list or chain.<br><br>
-The If-ElseIf-Else idiom is shown with this behaviour.
+#### Introduction
+The chain of responsibility pattern is a design pattern that defines a linked list of handlers, each of which is able to process requests. When a request is submitted to the chain, it is passed to the first handler in the list that is able to process it.
 #### Structure
 * AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassA
 * AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassB
 * AbstractClass (has AbstractClass "next", invokes as next if condition is not met) -> ClassC
 #### Behaviour
-* objA.next(objB)
-* objB.next(objC)
-* objA.execute(); // process or pass - execute or next.
-
-Is it up to the programmer/problem what it should be implemented in the condition and under which circumstances the next object in the chain is invoked.<br><br>
-**Technical similarities**: Decoration patterns has also chain call but it is a one unit as structure, here you can just exit the chain.
+1. objA.next(objB)
+2. objB.next(objC)
+3. objA.execute(); // process or pass - execute or next.
+#### Source
+* http://www.blackwasp.co.uk/ChainOfResponsibility.aspx
+* https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm
+* https://www.javatpoint.com/chain-of-responsibility-pattern
+* https://refactoring.guru/design-patterns/chain-of-responsibility/java/example
+* https://sourcemaking.com/design_patterns/chain_of_responsibility/java/2
+#### Notes
+* As the name suggests, the chain of responsibility pattern creates a chain of receiver objects for a request. This pattern decouples sender and receiver of a request based on type of request.
+* The design pattern promotes loose coupling by allowing a series of handlers to be created in a linked list or chain.<br><br>
+* The If-ElseIf-Else idiom is shown with this behaviour.
+* Is it up to the programmer/problem what it should be implemented in the condition and under which circumstances the next object in the chain is invoked.<br><br>
+* Technical similarities: Decoration patterns has also chain call but it is a one unit as structure, here you can just exit the chain.
+* ***Chained objects are passing the data from one link to another until the all links are processed or some of them consumed the process and breaked it and returned the value or changed state of some object.***
 
 ### Command
 
