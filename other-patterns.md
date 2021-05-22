@@ -33,7 +33,7 @@ Since it can be seen as common approach it is a software pattern in OO languages
 * Abstract Class
   * Abstract class with a generic type parameter `AbstractClass<T>`.
   * Class which extends the abstrac class with concrete type parameter `class MyConcreteClass extends AbstractClass<Integer>`.
-* Of cource combination of the is also possible.
+* Of cource the combination of the both previous approaches is also possible.
 
 ### Source
 * https://docs.oracle.com/javase/tutorial/java/generics/
