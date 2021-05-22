@@ -27,12 +27,13 @@ This pattern is introduces in the java generics tutorial as part of the excercis
 Since it can be seen as common approach it is a software pattern in OO languages who support generics.
 
 ### Behaviour
-* Typ 1
+* Interface
   * Interface with a generic type parameter `MyInterface<T>`. 
   * Class which imlements the interface with concrete type parameter `class MyConcreteClass implements MyInterface<Integer>`.
-* Typ 1
+* Abstract Class
   * Abstract class with a generic type parameter `AbstractClass<T>`.
   * Class which extends the abstrac class with concrete type parameter `class MyConcreteClass extends AbstractClass<Integer>`.
+* Of cource combination of the is also possible.
 
 ### Source
 * https://docs.oracle.com/javase/tutorial/java/generics/
