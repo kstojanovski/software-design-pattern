@@ -44,4 +44,4 @@ More about this kind of patterns you can find [here](./business-layer-design-pat
 More about this kind of patterns you can find [here](./integration-layer-design-patterns.md).
 <br><br>
 ### Other Patterns
-More about this kind of patterns you can find [here](./general-j2ee-patterns.md).
+More about this kind of patterns you can find [here](./other-patterns.md).
