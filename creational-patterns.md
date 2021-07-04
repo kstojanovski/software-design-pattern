@@ -11,7 +11,9 @@ The abstract factory pattern is a design pattern that allows for the creation of
 * https://sourcemaking.com/design_patterns/abstract_factory/java/1
 ### Notes
 * This pattern can also be called ***Factory of Factory of Factory ... of Object*** pattern.
-* It returnes Factory (see next pattern description) which create Object.
+* Depend on a discriminator it returnes Factory (see next pattern description) which create Object.
+* Since the "static factory method" also uses an discriminator, that approach it can be realized with this design pattern where only one object is returned.
+* More that one objects can be created with this approach. See the examples.
 
 ## Factory Method
 
@@ -22,8 +24,10 @@ The factory method pattern is a design pattern that allows for the creation of o
 * https://www.javatpoint.com/factory-method-design-pattern
 * https://sourcemaking.com/design_patterns/factory_method/java/1
 ### Notes
-* Class with **create**-mehtod which ***returns new created object***. The retrun value can also be generalazed object, therefore as return declaration an interface is declared.
-* Also parameter for an if-condition can be passed for runtime object type decision.
+* Class with **create**-mehtod which ***returns new created object***. The return value can also be generalazed object, therefore as return declaration an interface is declared.
+* This method can be easily confused with "static factory method" where an if-condition can be passed for runtime object type decision.
+* This design pattern does not have decision conditions which means for every object and dedicated creator exists, initializes and is used for creating the object.
+* Only one object is created with this approach.
 
 ## Singleton
 
